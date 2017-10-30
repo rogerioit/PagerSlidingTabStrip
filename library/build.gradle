@@ -1,4 +1,4 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
     compile 'com.android.support:support-v4:19.0.0'
@@ -20,6 +20,7 @@ android {
             res.srcDirs = ['res']
         }
     }
+    buildToolsVersion '26.0.2'
 }
 
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
